@@ -50,4 +50,5 @@ def delete_data(item_id):
         return jsonify({'error': 'Item not found'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Run the app with host='0.0.0.0' and port=10000
+    app.run(host='0.0.0.0', port=10000, debug=True)
